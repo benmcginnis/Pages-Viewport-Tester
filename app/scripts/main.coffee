@@ -18,16 +18,17 @@ $ ->
   processParams()
 
 
-window.toggleLandscape = (deviceID, caller) ->
-  $ deviceID
-    .toggleClass 'landscape'
-
-  $ caller 
-    .toggleClass 'js-is-landscape'
-
-  if $(caller).hasClass 'js-is-landscape'
-    $ caller
-      .text 'Portrait'
-  else
-    $ caller
-      .text 'Landscape'
+$ ".js-change-orientation"
+  .click () ->
+    $self = $ @
+    deviceSelector = $self.data().deviceSelector
+    
+    $ deviceSelector
+      .toggleClass 'landscape'
+    
+    $self.toggleClass 'js-is-landscape'
+    
+    if $self.hasClass 'js-is-landscape'
+      $self.text 'Portrait'
+    else
+      $self.text 'Landscape'
