@@ -1,4 +1,7 @@
+
 @import 'webapp_generated';
+
+$spaced-margin: 15px;
 
 #iphone5s, #iphone5c, #ipad
 {
@@ -16,4 +19,16 @@
 iframe.screen
 {
   border: none;
+}
+
+.row-spaced
+{
+  margin-top: $spaced-margin;
+  margin-bottom: $spaced-margin;
+}
+
+.btn
+{  
+  margin-top: $spaced-margin;
+  margin-bottom: $spaced-margin;
 }
