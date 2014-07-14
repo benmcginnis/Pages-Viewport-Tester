@@ -4,7 +4,7 @@
   "dependencies": {
     "bootstrap-sass-official": "~3.1.0",
     "jquery": "~1.11.0",
-    "devices.css": "git@github.com:marvelapp/devices.css.git"
+    "devices": "git@github.com:marvelapp/devices.css.git"
   },
   "devDependencies": {}
 }
