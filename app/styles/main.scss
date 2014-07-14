@@ -1,2 +1,9 @@
 @import 'webapp_generated';
 
+#iphone5s, #iphone5c, #ipad
+{
+  div
+  {
+    box-sizing: content-box;
+  }
+}
