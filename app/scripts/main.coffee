@@ -16,3 +16,18 @@ $ ->
       pushState()
 
   processParams()
+
+
+window.toggleLandscape = (deviceID, caller) ->
+  $ deviceID
+    .toggleClass 'landscape'
+
+  $ caller 
+    .toggleClass 'js-is-landscape'
+
+  if $(caller).hasClass 'js-is-landscape'
+    $ caller
+      .text 'Portrait'
+  else
+    $ caller
+      .text 'Landscape'
