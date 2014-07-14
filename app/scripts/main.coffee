@@ -2,7 +2,7 @@ $ ->
   processParams = ->
     url = $.url(window.location.href)
     if url.param "site-url"      
-      $ "iframe.screen"
+      $ "iframe"
         .attr 'src', url.param "site-url"
 
       $ "#site-url"
